@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="heading">FORM VALIDATION</div>
+<div class="main">
+    <form action="" id="form">
+        <div class="container_1">
+            <div class="inType">Name</div>
+            <div class="inType">E-Mail</div>
+            <div class="inType">Password</div>
+            <div class="inType">Address</div>
+            <div class="inTypeG">Gender</div>
+            <div class="inType">Hobbies</div>
+        </div>
+        <div class="container_2">
+            <div class="name"><input type="text" name="" id="name"> <span id="namewarning">This is a required field</span></div>
+            <div><input type="email" name="" id="email"> <span id="emailwarning">This is a required field</span></div>
+            <div><input type="password" name="" id="password"> <span id="passwordwarning">This is a required field</span></div>
+            <div><textarea name="" id="textarea"></textarea> <span id="textareawarning">This is a required field</span></div>
+            <div class="gender">
+                <label for="male">Male</label><input type="radio" name="gender" id="male">
+                <label for="female">Female</label><input type="radio" name="gender" id="female">
+                <span id="genderwarning">This is a required field</span>
+            </div>
+            <div class="checkbox">
+                <label for="reading">Reading</label><input type="checkbox" name="hobby" id="reading">
+                <label for="swimming">Swimming</label><input type="checkbox" name="hobby" id="swimming">
+                <label for="cooking">Cooking</label><input type="checkbox" name="hobby" id="cooking">
+                <label for="dancing">Dancing</label><input type="checkbox" name="hobby" id="dancing">
+                <label for="painting">Painting</label><input type="checkbox" name="hobby" id="painting">
+                <label for="photography">Photography</label><input type="checkbox" name="hobby" id="photography">
+                <div class="checkboxwarning" id="checkboxwarning"> This is a required field</div>
+        </div>
+        </div>
+    </form>
+    <div class="button"><button onclick="validate()">Submit</button></div>
+</div>
+    
+
+<script src="javascript/home.js"></script>
+</body>
+</html>
